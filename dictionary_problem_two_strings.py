@@ -3,8 +3,12 @@
 
 
 def two_strings(s1, s2):
+    set_string = set()
     for ch in s1:
-        if ch in s2:
+        set_string.add(ch)
+
+    for ch in s2:
+        if ch in set_string:
             return 'YES'
     return 'NO'
 
